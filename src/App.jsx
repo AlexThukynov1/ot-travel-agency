@@ -9,7 +9,7 @@ import Tours from './sections/Tours'
 
 const App = () => {
   return (
-    <div>
+    <>
       <Header/>
       <Home/>
       <Categories/>
@@ -17,7 +17,7 @@ const App = () => {
       <Destination/>
       <Tours/>
       <Footer/>
-    </div>
+    </>
   ) 
 }
 
