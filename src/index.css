@@ -1,25 +1,92 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-    
-}
 /*========== Colors ==========*/
+    --hue: 12;
+    --first-color: hsl(var(--hue), 100%, 25%);
+    --title-color: hsl(var(--hue), 4%, 25%);
+    --text-color: hsl(var(--hue), 4%, 38%);
+    --body-color: hsl(var(--hue), 4%, 99%);
+    --border-color: hsl(var(--hue), 36%, 72%);
+    --white-color: hsl(var(--hue), 4%, 100%);
 
 /*========== Font family ==========*/
-
+    --body-font: "Raleway", sans-serif;
 /*========== Font sizes ==========*/
-
+    --big-font-size: 3.75rem;
+    --h1-font-size: 3.5rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.5rem;
+    --larger-font-size: 1.25rem;
+    --large-font-size: 1.125rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .75rem;
 /*========== Font weight ==========*/
-
-
+    --w-100: 100;
+    --w-200: 200;
+    --w-300: 300;
+    --w-400: 400;
+    --w-500: 500;
+    --w-600: 600;
+    --w-700: 700;
+    --w-800: 800;
+    --w-900: 900;
+}
 /* Responsive typography */
 
 
 /*=============== BASE ===============*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+input,
+button,
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
 
+body {
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--title-color);
+    font-weight: var(--w-900);
+    line-height: 1.2;
+}
+
+p {
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
 /*=============== REUSABLE CSS CLASSES ===============*/
 
 
