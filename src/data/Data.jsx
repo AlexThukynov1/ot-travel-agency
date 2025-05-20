@@ -1,30 +1,30 @@
-import category1 from './assets/category-1.png';
-import category2 from './assets/category-2.png';
-import category3 from './assets/category-3.png';
-import category4 from './assets/category-4.png';
-import category5 from './assets/category-5.png';
-import category6 from './assets/category-6.png';
+import category1 from '../assets/category-1.png';
+import category2 from '../assets/category-2.png';
+import category3 from '../assets/category-3.png';
+import category4 from '../assets/category-4.png';
+import category5 from '../assets/category-5.png';
+import category6 from '../assets/category-6.png';
 
-import destination1 from './assets/destination-1.png';
-import destination2 from './assets/destination-2.png';
-import destination3 from './assets/destination-3.png';
-import destination4 from './assets/destination-4.png';
-import destination5 from './assets/destination-5.png';
-import destination6 from './assets/destination-6.png';
+import destination1 from '../assets/destination-1.png';
+import destination2 from '../assets/destination-2.png';
+import destination3 from '../assets/destination-3.png';
+import destination4 from '../assets/destination-4.png';
+import destination5 from '../assets/destination-5.png';
+import destination6 from '../assets/destination-6.png';
 
-import tour1 from './assets/tour-1.png';
-import tour2 from './assets/tour-2.png';
-import tour3 from './assets/tour-3.png';
-import tour4 from './assets/tour-4.png';
-import tour5 from './assets/tour-5.png';
-import tour6 from './assets/tour-6.png';
+import tour1 from '../assets/tour-1.png';
+import tour2 from '../assets/tour-2.png';
+import tour3 from '../assets/tour-3.png';
+import tour4 from '../assets/tour-4.png';
+import tour5 from '../assets/tour-5.png';
+import tour6 from '../assets/tour-6.png';
 
-import gallery1 from './assets/gallery-1.png';
-import gallery2 from './assets/gallery-2.png';
-import gallery3 from './assets/gallery-3.png';
-import gallery4 from './assets/gallery-4.png';
-import gallery5 from './assets/gallery-5.png';
-import gallery6 from './assets/gallery-6.png';
+import gallery1 from '../assets/gallery-1.png';
+import gallery2 from '../assets/gallery-2.png';
+import gallery3 from '../assets/gallery-3.png';
+import gallery4 from '../assets/gallery-4.png';
+import gallery5 from '../assets/gallery-5.png';
+import gallery6 from '../assets/gallery-6.png';
 
 export const links = ['home', 'about', 'destinations', 'tours'];
 
