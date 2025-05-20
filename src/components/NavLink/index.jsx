@@ -1,12 +1,11 @@
-import './nav-link.css'
-
-const NavLink = ({to, text, className}) => {
+const NavLink = ({to, text, className, children}) => {
     return (
         <a 
             href={to}
             className={className}
         >
             {text}
+            {children}
         </a>
     )
 }

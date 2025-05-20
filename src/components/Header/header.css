@@ -1,0 +1,14 @@
+.header {
+    position: fixed;
+    inset: 0 0 auto;
+}
+
+
+
+.nav {
+    background-color: var(--first-color);
+    border-radius: 3rem;
+    max-width: 1436px;
+    padding-inline: 4.5rem;
+    height: 3.75rem;
+}
