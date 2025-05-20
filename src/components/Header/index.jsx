@@ -2,6 +2,7 @@ import './header.css'
 import Logo from '../../assets/logo.svg'
 import {links} from '../../data/Data'
 import NavLink from '../NavLink'
+import { RiCloseFill, RiMenu3Fill, RiTelegram2Fill } from 'react-icons/ri'
 
 const Header = () => {
   return (
@@ -23,7 +24,17 @@ const Header = () => {
               })
             }
           </ul>
+
+          <RiCloseFill className='nav-close'/>
         </div>
+
+       <div className='nav-buttons'>
+        <NavLink to="booking" text="Book Now" className="button nav-link">
+          <RiTelegram2Fill className='button-icon'/>
+        </NavLink>
+
+        <RiMenu3Fill className='nav-toggle'/>
+       </div>
       </nav>
     </header>
   ) 

@@ -24,8 +24,11 @@
 
 
 /*=============== LAYOUT ===============*/
-
-
+.container {
+    max-width: 1336px;
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+}
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 1208px) {}
