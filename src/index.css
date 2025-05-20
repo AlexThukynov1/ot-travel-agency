@@ -88,7 +88,18 @@ img {
     max-width: 100%;
 }
 /*=============== REUSABLE CSS CLASSES ===============*/
-
+.button {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+    border: 2px solid var(--first-color);
+    background-color: var(--first-color);
+    padding: .25rem 1rem;
+    border-radius: 2rem;
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-weight: var(--w-700);
+}
 
 /*=============== LAYOUT ===============*/
 .container {

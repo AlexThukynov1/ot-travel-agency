@@ -29,7 +29,7 @@ const Header = () => {
         </div>
 
        <div className='nav-buttons'>
-        <NavLink to="booking" text="Book Now" className="button nav-link">
+        <NavLink to="booking" text="Book Now" className="button">
           <RiTelegram2Fill className='button-icon'/>
         </NavLink>
 
