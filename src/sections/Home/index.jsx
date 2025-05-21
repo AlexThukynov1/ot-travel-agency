@@ -25,6 +25,7 @@ const Home = () => {
             name="About Us"
             className="button button-white"
           >
+            About Us
             <RiTelegram2Fill/>
           </NavLink>
         </div>
