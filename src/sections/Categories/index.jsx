@@ -1,5 +1,12 @@
 import { RiArrowLeftDoubleFill, RiArrowRightDoubleFill } from 'react-icons/ri'
 import SectionTitle from '../../components/SectionTitle'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation } from 'swiper/modules'
+import {categories} from '../../data/Data'
+
+import 'swiper/css'
+import 'swiper/css/navigation'
+
 import './categories.css'
 
 const Categories = () => {
@@ -20,6 +27,21 @@ const Categories = () => {
           </button>
         </div>
       </div>
+      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+        {
+          categories.map(({img, title}, index) => {
+            return(
+              <SwiperSlide
+              className='categoty-slide' 
+                key={index}
+              >
+                <img src={img} alt="Category image" className='category-img'/>
+                <h3 className='category-title'>{title}</h3>
+              </SwiperSlide>
+            )
+          })
+        }
+      </Swiper>
     </section>
   ) 
 }
