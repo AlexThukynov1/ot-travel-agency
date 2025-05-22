@@ -39,7 +39,7 @@ const CategorySwipper = ({next, prev}) => {
           categories.map(({img, title}, index) => {
             return(
               <SwiperSlide
-              className='categoty-slide' 
+                className='category-slide' 
                 key={index}
               >
                 <img src={img} alt="Category image" className='category-img'/>

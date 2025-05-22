@@ -14,10 +14,10 @@ const Categories = () => {
         />
 
         <div className="swiper-btns">
-          <button className='swipper-btn prev-btn'>
+          <button className='swiper-btn prev-btn'>
             <RiArrowLeftDoubleFill/>
           </button>
-          <button className='swipper-btn next-btn'>
+          <button className='swiper-btn next-btn'>
             <RiArrowRightDoubleFill/>
           </button>
         </div>
