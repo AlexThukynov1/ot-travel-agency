@@ -129,6 +129,23 @@ img {
 .grid {
     display: grid;
 }
+.category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+}
+.swiper-btns {
+    display: inline-flex;
+    column-gap: 1rem;
+    margin-top: 1.25rem;
+}
+.swiprt-btn {
+    width: 45px;
+    aspect-ratio: 1/1;
+    border: 2px solid var(--first-color);
+    border-radius: 50%;
+}
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 1208px) {}
