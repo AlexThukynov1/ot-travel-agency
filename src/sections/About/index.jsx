@@ -6,7 +6,7 @@ import {RiTelegram2Fill} from "react-icons/ri";
 
 const About = () => {
   return (
-      <section className="about section">
+      <section id="about" className="about section">
         <div className="about-container container grid">
           <img src={aboutImage} alt="About section image" className="about-img"/>
 

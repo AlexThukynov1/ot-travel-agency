@@ -6,7 +6,7 @@ import CategorySwipper from './components/CategorySwipper'
 
 const Categories = () => {
   return (
-    <section className="category section container">
+    <section id="categories" className="category section container">
       <div className="category-header">
         <SectionTitle 
           title="Categories"
