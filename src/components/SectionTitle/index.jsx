@@ -1,6 +1,6 @@
 import './section-title.css'
 
-const SectionTitle = ({title, description}) => {
+const SectionTitle = ({title, description, subtitle}) => {
     return (
         <div className='section-header'>
             <h2 className='section-title'>{title}</h2>
