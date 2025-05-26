@@ -15,9 +15,9 @@ const Destination = () => {
 
         <div className="destination-container">
           {
-            destinations.map((id, img, title, price, rating) => {
+            destinations.map(({img, title, price, rating}, index) => {
               return (
-                  <div className="destination-item" key={id}>
+                  <div className="destination-item" key={index}>
                     <img src={img} alt={title} className="destination-img"/>
                     <div className="destination-details">
                       <div className="destination-top">
