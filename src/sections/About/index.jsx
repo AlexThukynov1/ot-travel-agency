@@ -1,6 +1,8 @@
 import './about.css'
 import aboutImage from '../../assets/about-img.png'
 import SectionTitle from "../../components/SectionTitle/index.jsx";
+import NavLink from "../../components/NavLink/index.jsx";
+import {RiTelegram2Fill} from "react-icons/ri";
 
 const About = () => {
   return (
@@ -20,19 +22,22 @@ const About = () => {
                       <p className="about-no">25+</p>
                       <h3 className="about-title">Years of Experience</h3>
                   </div>
-              </div>
-              <div className="about-data">
                   <div className="about-item">
                       <p className="about-no">10K</p>
                       <h3 className="about-title">Success Journey</h3>
                   </div>
-              </div>
-              <div className="about-data">
                   <div className="about-item">
                       <p className="about-no">12+</p>
                       <h3 className="about-title">Awards Winning</h3>
                   </div>
               </div>
+              <NavLink
+                to="/"
+                text="About More"
+                className="button"
+              >
+                <RiTelegram2Fill className="button-icon"/>
+              </NavLink>
           </div>
         </div>
       </section>
