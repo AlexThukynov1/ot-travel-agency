@@ -8,7 +8,7 @@ import './categoty-swipper.css'
 
 const CategorySwipper = ({next, prev}) => {
     return (
-              <Swiper 
+        <Swiper
         navigation={{
           nextEl: next,
           prevEl: prev

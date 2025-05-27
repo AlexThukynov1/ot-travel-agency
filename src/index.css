@@ -129,7 +129,8 @@ img {
 .grid {
     display: grid;
 }
-.category-header {
+.category-header,
+.tours-header{
     display: flex;
     justify-content: space-between;
     align-items: start;
