@@ -43,7 +43,7 @@ const CategorySwipper = ({next, prev}) => {
                 key={index}
               >
                 <img src={img} alt="Category image" className='category-img'/>
-                <h3 className='category-title'>{title}</h3>
+                <h3 className='category-title cursor-default'>{title}</h3>
               </SwiperSlide>
             )
           })

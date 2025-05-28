@@ -41,20 +41,20 @@ const TourSweper = ({prev, next}) => {
                                 <div className="tour-detail">
                                     <Stars stars={stars}/>
 
-                                    <h3 className="tour-title">{title}</h3>
-                                    <p className="tour-location">{location}</p>
+                                    <h3 className="tour-title cursor-default">{title}</h3>
+                                    <p className="tour-location cursor-default">{location}</p>
 
                                     <hr className="tour-divider"/>
 
-                                    <div className="tour-days">
+                                    <div className="tour-days cursor-default">
                                         <RiCalendarFill className="tour-icon"/>
                                         {days}
                                     </div>
 
                                     <div className="tour-bottom">
                                         <p>
-                                            <span className="tour-price">{price}</span>
-                                            <span className="tour-person">/Person</span>
+                                            <span className="tour-price cursor-default">{price}</span>
+                                            <span className="tour-person cursor-default">/Person</span>
                                         </p>
 
                                         <NavLink

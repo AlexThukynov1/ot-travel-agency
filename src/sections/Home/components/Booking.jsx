@@ -16,7 +16,7 @@ const Booking = ({icon}) => {
 
                 <div className="booking-item">
                     <input 
-                        type="text" 
+                        type="date"
                         placeholder="Start Date" 
                         className="booking-input" 
                     />
@@ -27,7 +27,7 @@ const Booking = ({icon}) => {
 
                 <div className="booking-item">
                     <input 
-                        type="text" 
+                        type="date"
                         placeholder="End Date" 
                         className="booking-input" 
                     />

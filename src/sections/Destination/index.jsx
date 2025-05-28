@@ -21,11 +21,11 @@ const Destination = () => {
                     <img src={img} alt={title} className="destination-img"/>
                     <div className="destination-details">
                       <div className="destination-top">
-                        <span className="destination-price">{price}</span>
-                        <span className="destination-rating">{rating}</span>
+                        <span className="destination-price cursor-default">{price}</span>
+                        <span className="destination-rating cursor-default">{rating}</span>
                       </div>
 
-                      <h3 className="destination-title">{title}</h3>
+                      <h3 className="destination-title cursor-default">{title}</h3>
                       <NavLink
                           to="/"
                           text="Details"
