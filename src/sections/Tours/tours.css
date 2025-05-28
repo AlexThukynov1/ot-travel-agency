@@ -53,6 +53,7 @@
     color: hsl(191, 34%, 41%);
     font-size: var(--larger-font-size);
     margin-block: 1.25rem 0.75rem;
+    justify-content: center;
 }
 
 .tour-icon {
@@ -61,7 +62,7 @@
 
 .tour-bottom {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 .tour-price {
