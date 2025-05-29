@@ -3,6 +3,8 @@ import './footer.css'
 import FooterLogo from '../../assets/footer-logo.png'
 import {FaFacebookF, FaInstagram} from "react-icons/fa";
 import {FaXTwitter} from "react-icons/fa6";
+import {links} from "../../data/Data.jsx";
+import NavLink from "../NavLink/index.jsx";
 
 const Footer = () => {
   return (
@@ -28,7 +30,7 @@ const Footer = () => {
               <a
                   href="https://www.instagram.com/"
                   target="_blank"
-                  lassName="footer-social-link"
+                  className="footer-social-link"
               >
                 <FaInstagram/>
               </a>
@@ -39,6 +41,31 @@ const Footer = () => {
               >
                 <FaXTwitter/>
               </a>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="footer-title">Quick Links</h3>
+
+            <ul className="nav-list">
+              {
+                links.map((link, index) => {
+                  return (
+                    <li className="footer-item" key={index}>
+                      <NavLink to={link} text={link} className='footer-link'/>
+                    </li>
+                  )
+                })
+              }
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="footer-title">Contact</h3>
+            <div className="footer-contact grid">
+              <div className="footer-item">
+
+              </div>
             </div>
           </div>
         </div>
