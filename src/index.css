@@ -225,15 +225,20 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .nav {
         height: 3.25rem;
     }
-
+    .section {
+        padding-top: 4rem;
+    }
     .booking-form {
         gap: 1rem;
     }
     .home-container,
-    .booking-form{
+    .booking-form,
+    .about-container {
        grid-template-columns: 1fr;
     }
-    .home-data {
+    .home-data,
+    .section-header,
+    .about-container{
         text-align: center;
     }
 
@@ -246,7 +251,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
 
     .home-title,
-    .home-description {
+    .home-description,
+    .section-header {
         margin-inline: auto;
     }
 
@@ -318,14 +324,109 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         justify-self: center;
     }
 
+    .category,
+    .tours{
+        position: relative;
+        padding-bottom: 4.75rem;
+    }
+
+    .category-header {
+        justify-content: center;
+    }
+
+    .swiper-btns {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .tours {
+        padding-bottom: 11rem;
+    }
+
+    .tours .swiper-btns {
+        bottom: 6.25rem;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 576px;
+    }
+    .nav-menu {
+        width: 80%;
+    }
+
+    .booking {
+        padding-block: 3rem;
+    }
+
+    .swiper {
+        max-width: 300px;
+    }
+    .section {
+        padding-top: 2rem;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-logo-img,
+    .footer-description {
+        margin-inline: auto;
+    }
+
+    .footer-description,
+    .footer-info {
+        max-width: 400px;
+    }
+
+    .footer-item,
+    .footer-socials,
+    .footer-gallery {
+        justify-content: center;
+    }
+
+    .footer-title::before,
+    .footer-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
 
 /* For small devices */
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 460px;
+        padding-inline: 1rem;
+    }
 
-@media screen and (max-width: 460px) {}
+    .about-data {
+        flex-direction: column;
+    }
+
+    .about-no {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .container {
+        max-width: 300px;
+        padding-inline: 0.15rem;
+    }
+
+    .booking-form {
+        padding: 0;
+    }
+}
 
 
 

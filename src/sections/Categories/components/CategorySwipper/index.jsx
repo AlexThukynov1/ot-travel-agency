@@ -25,7 +25,7 @@ const CategorySwipper = ({next, prev}) => {
             slidesPerView: 2,
           },
           1024: {
-            slidesPerView: 5,
+            slidesPerView: 3,
           },
           1208: {
             slidesPerView: 4,
