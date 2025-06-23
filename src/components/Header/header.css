@@ -31,6 +31,9 @@
 .nav-close {
     color: var(--title-color)
 }
+.nav-link-button {
+    display: none;
+}
 
 .nav-link {
     text-transform: capitalize;

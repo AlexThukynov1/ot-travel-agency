@@ -169,6 +169,12 @@ img {
 .cursor-default {
     cursor: default;
 }
+
+.nav-toggle,
+.nav-close,
+.nav-link-button {
+    display: none;
+}
 input[type="date"] {
     position: relative;
     padding-right: 30px;
@@ -221,10 +227,31 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
 
     .booking-form {
-        column-gap: 1.5rem;
+        gap: 1rem;
     }
-    .home-container {
-        column-gap: 4rem;
+    .home-container,
+    .booking-form{
+       grid-template-columns: 1fr;
+    }
+    .home-data {
+        text-align: center;
+    }
+
+    .home-title {
+        max-width: 400px;
+    }
+
+    .home-description {
+        max-width: 600px;
+    }
+
+    .home-title,
+    .home-description {
+        margin-inline: auto;
+    }
+
+    .home-img {
+        display: none;
     }
 
     .nav-toggle,
@@ -235,16 +262,25 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .nav-button {
         display: none;
     }
+    .nav-buttons {
+        gap:  1rem;
+    }
     .nav-menu {
         position: fixed;
         top: 0;
-        right: 0;
+        right: -100%;
         background: hsla(var(--hue), 0%, 100%, 0.4);
         backdrop-filter: blur(16px);
         border-left: 2px solid var(--border-color);
         width: 50%;
         height: 100%;
         padding: 5rem 0 0 3rem;
+        transition: right 0.3s;
+        z-index: 100;
+    }
+
+    .show-menu {
+        right: 0;
     }
 
     .nav-list {
@@ -253,8 +289,35 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
 
     .nav-link {
-        font-weight: (var;
+        font-weight: var(--w-700);
     }
+    .nav-close {
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+    }
+    .nav-buttons .button {
+        display: none;
+    }
+
+    .booking-form {
+        padding: 1rem;
+        background-color: transparent;
+    }
+
+    .booking-item {
+        background-color: var(--body-color);
+    }
+
+    .booking-to {
+        color: var(--white-color);
+    }
+
+    .booking-to,
+    .booking-button {
+        justify-self: center;
+    }
+
 }
 
 @media screen and (max-width: 768px) {}
