@@ -36,7 +36,18 @@
     --w-900: 900;
 }
 /* Responsive typography */
-
+@media screen and (max-width: 1208px) {
+    :root {
+        --big-font-size: 2.75rem;
+        --h1-font-size: 2.5rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --larger-font-size: 1.125rem;
+        --large-font-size: 1rem;
+        --normal-font-size: .920rem;
+        --small-font-size: .8rem;
+    }
+}
 
 /*=============== BASE ===============*/
 * {
@@ -159,14 +170,13 @@ img {
     cursor: default;
 }
 input[type="date"] {
-    position: relative; /* Щоб позиціонувати власну іконку */
-    padding-right: 30px; /* Залишаємо місце для власної іконки */
+    position: relative;
+    padding-right: 30px;
 }
 
-/* Приховуємо нативний індикатор для WebKit браузерів */
 input[type="date"]::-webkit-calendar-picker-indicator {
-    opacity: 0; /* Робимо його прозорим, але він все ще клікабельний */
-    position: absolute; /* Позиціонуємо поверх власної іконки */
+    opacity: 0;
+    position: absolute;
     left: 0;
     top: 0;
     width: 100%;
@@ -175,10 +185,77 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
-@media screen and (max-width: 1208px) {}
+@media screen and (max-width: 1208px) {
+    .container {
+        max-width: 986px;
+    }
+
+    .button {
+        padding: .125rem .75rem;
+        font-size: .875rem;
+
+    }
+
+    .destinations-container {
+        gap: 0.75rem
+    }
+
+    .tour-details {
+        padding: 0.75rem;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(3, max-content);
+        row-gap: 3.5rem;
+    }
+}
 
 /* For medium devices */
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .nav {
+        height: 3.25rem;
+    }
+
+    .booking-form {
+        column-gap: 1.5rem;
+    }
+    .home-container {
+        column-gap: 4rem;
+    }
+
+    .nav-toggle,
+    .nav-close {
+        display: inline-flex;
+    }
+
+    .nav-button {
+        display: none;
+    }
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: hsla(var(--hue), 0%, 100%, 0.4);
+        backdrop-filter: blur(16px);
+        border-left: 2px solid var(--border-color);
+        width: 50%;
+        height: 100%;
+        padding: 5rem 0 0 3rem;
+    }
+
+    .nav-list {
+       flex-direction: column;
+        row-gap:  2rem;
+    }
+
+    .nav-link {
+        font-weight: (var;
+    }
+}
 
 @media screen and (max-width: 768px) {}
 

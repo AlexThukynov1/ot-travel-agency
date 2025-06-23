@@ -113,3 +113,11 @@
     grid-template-columns: repeat(3, max-content);
     gap: 0.75rem;
 }
+.footer-img {
+    cursor: pointer;
+    transition: opacity 0.3s
+}
+
+.footer-img:hover {
+    opacity: 0.4;
+}

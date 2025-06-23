@@ -1,12 +1,17 @@
-const NavLink = ({to, text, className, children}) => {
+import { Link } from 'react-scroll'
+
+const NavLink = ({to, text, className, children, extraPops={}}) => {
     return (
-        <a 
-            href={to}
+        <Link
+            to={to}
+            smooth = {true}
+            duration = {500}
             className={className}
+            {...extraPops}
         >
             {text}
             {children}
-        </a>
+        </Link>
     )
 }
 
